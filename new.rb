@@ -19,12 +19,23 @@ car = Car.new
 car.move("右",5)
 
 
-# クラスメソッド
+# クラスメソッドその1
 class Car
 
   def self.run(distance)
     puts "車で#{distance}キロ走ります。"
   end
+
+end
+
+# クラスメソッドその2
+class Car
+
+  def self.turn(direction)
+    puts "#{direction}に曲がります"
+  end
+
 end
 
 car.run(10)
+car.turn("右")
